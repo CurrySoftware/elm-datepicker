@@ -93,7 +93,7 @@ To handle `Msg` in your update function, you should unwrap the `DatePicker.Msg` 
 In most usecases it should suffice to match on `Picked Date`.
 Have a look at the `nightwash-simple` example for basic error handling with `InputError`.
 
-To create the settings to pass to `update`, DatePicker.defaultSettings` is provided to make it easier to use. You only have to override the settings that you are interested in.
+To create the settings to pass to `update`, `DatePicker.defaultSettings` is provided to make it easier to use. You only have to override the settings that you are interested in.
 
 **Note** The datepicker does _not_ retain an internal idea of a picked date in its model. That is, it depends completely on you for an idea of what date is chosen, so that third tuple member is important! Evan Czaplicki has a compelling argument for why components should not necessarily have an their own state for the primary data they manage [here](https://github.com/evancz/elm-sortable-table#single-source-of-truth).
 
